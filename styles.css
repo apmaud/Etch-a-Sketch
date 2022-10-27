@@ -1,0 +1,16 @@
+.container {
+    background-color:white;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    height: 900px;
+    width: 900px;
+}
+.square {
+    background-color: white;
+    border: 1px solid black;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
