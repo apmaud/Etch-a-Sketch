@@ -4,13 +4,17 @@
     display: grid;
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
-    height: 900px;
-    width: 900px;
+    height: 960px;
+    width: 960px;
 }
+
 .square {
     background-color: white;
     border: 1px solid black;
-    flex: 1;
-    height: 100%;
-    width: 100%;
+
+}
+
+.coloredSquare {
+    background-color: black;
+    border: 1px solid black;
 }

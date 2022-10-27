@@ -7,12 +7,14 @@ function createGrid () {
         container.appendChild(div);
     }
 }
-
-// const square = document.querySelector('.square')
-// function replaceSquare (e) {
-//     e.target.classList.replace('square', 'coloredSquare');
-// }
-// square.addEventListener("mouseover", replaceSquare(e));
-
-
 createGrid();
+
+const squares = document.querySelectorAll('.square')
+for(let i = 0; i < squares.length; i++) {
+    let square = squares[i];
+    square.addEventListener("mouseover", function(e) {
+        e.target.classList.replace('square', 'coloredSquare');
+    });
+}
+
+
