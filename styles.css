@@ -1,6 +1,22 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    height: 100px;
+    width: 960px;
+    border: 2px solid black;
+}
+
 .container {
     background-color:white;
-    border: 5px solid black;
+    border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);

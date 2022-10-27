@@ -9,6 +9,23 @@ function createGrid () {
 }
 createGrid();
 
+// function updateGrid (gridNumber) {
+    
+// }
+
+
+const btn = document.querySelector(".sizeButton");
+btn.addEventListener('click', function(){
+    var gridNumber = parseInt(prompt("Enter a number!"));
+    if (Number.isInteger(gridNumber)) {
+        console.log('updated grid');
+        updateGrid(gridNumber);
+        return;
+    }
+        console.log("not a number");
+        return;
+});
+
 const squares = document.querySelectorAll('.square')
 for(let i = 0; i < squares.length; i++) {
     let square = squares[i];
